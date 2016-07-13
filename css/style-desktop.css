@@ -1,0 +1,290 @@
+/*Documento CSS*/
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC);
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	vertical-align:baseline;
+}
+body{
+	font-family: 'Muli', sans-serif;
+}
+
+.nav{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.nav li{
+	padding-left: 4px;
+	padding-right: 4px;
+}
+.navbar-edit{
+	background: transparent;
+	font-weight: 500;
+}
+.navbar-brand{
+	padding: 2px 2px;
+    outline: none;
+}
+.navbar-fixed-top{
+	position: fixed !important;
+	z-index: 1030;
+}
+
+.carousel-inner{
+	height: 100% !important;
+}
+
+.background-color-scroll{
+	animation-duration: 2s;
+	animation-name: slidein;
+	background: black !important;
+}
+
+@keyframes slidein {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 50px;
+  }
+}
+
+.background-color-scroll .navbar-brand{
+	color: black;
+}
+
+.cover .navbar-edit{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+}
+
+.logo-size{
+	animation-duration: 1.5s;
+	animation-name: logosizelidein;
+	width: 180px;
+	height: 100px;
+
+}
+
+@keyframes logosizelidein {
+  from {
+    width: 154px;
+	height: 65px;
+  }
+
+  to {
+	width: 180px;
+	height: 100px;
+  }
+}
+
+.logo-size-scroll{
+	animation-duration: 1.5s;
+	animation-name: logoslidein;
+	width: 154px;
+	height: 65px;
+}
+
+@keyframes logoslidein {
+  from {
+    width: 180px;
+	height: 100px;
+  }
+
+  to {
+    width: 154px;
+	height: 65px;
+  }
+}
+
+.icone-buscar{
+	width: 94%;
+	margin-top: -57px;
+	height: 50px;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: white;
+	background: white;
+	opacity: .8;
+	color: black;
+	text-align: center;
+	font-size: 14pt;
+	font-family: 'Play', sans-serif;
+}
+
+.section {
+	height:100%;
+}
+
+.text-search-color{
+	color: white;
+
+}
+
+.text-white{
+	color: white;
+	font-size: 12pt;
+	text-transform: uppercase;
+}
+
+.opcao-ativa{
+	background: white;
+	border-radius: 10px;
+}
+.opcao-ativa a{
+	color: black !important;
+}
+
+.opcao-ativa a:hover{
+	color: black !important;
+	background: white !important;
+	border-radius: 10px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	text-transform: uppercase;
+    outline: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+	color: black;
+	background: white;
+	border-radius: 10px;
+}
+
+.fonte-tamanho{
+	font-size: 14pt !important;
+}
+
+.background-quem-somos{
+	background-image: url("../imagens/fundo.jpg");
+}
+
+.background-equipe{
+	background-image: url("../imagens/fundo2.jpg");
+
+}
+
+
+.img-responsive:hover{
+	opacity: 0.8;
+}
+
+hr{
+	border-top: 1px solid #383939;
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.img-circle{
+	border-style: solid;
+}
+
+.fonte{
+	font-family: 'IM Fell French Canon SC', serif !important;
+}
+
+
+/*Perfil - EQUIPE*/
+
+.card {
+    margin-top: 35px;
+    padding: 30px;
+    background-color: rgba(214, 224, 226, 0.2);
+    -webkit-border-top-left-radius:5px;
+    -moz-border-top-left-radius:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-top-right-radius:5px;
+    border-top-right-radius:5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-style: solid;
+}
+.card.hovercard {
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card.hovercard .card-background {
+    height: 250px;
+}
+.card-background img {
+    -webkit-filter: blur(25px);
+    -moz-filter: blur(25px);
+    -o-filter: blur(25px);
+    -ms-filter: blur(25px);
+    filter: blur(25px);
+    margin-left: -100px;
+    margin-top: -200px;
+    min-width: 130%;
+}
+.card.hovercard .useravatar {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+}
+.useravatar img:hover{
+    background: black;
+}
+.card.hovercard .useravatar img {
+    width: 220px;
+    height: 220px;
+    max-width: 220px;
+    max-height: 220px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+}
+.card.hovercard .card-info {
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+}
+.card.hovercard .card-info .card-title {
+    padding:0 5px;
+    font-size: 24px;
+    line-height: 1;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;     
+}
+.card.hovercard .card-info {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 20px;
+    color: #737373;
+    text-overflow: ellipsis;
+}
+.card.hovercard .bottom {
+    padding: 0 20px;
+    margin-bottom: 17px;
+}
+.btn-pref .btn {
+    -webkit-border-radius:0 !important;
+}
+
+/*FIM perfil EQUIPE*/
+
+#aQuemSomos2{
+    outline: none;
+}
