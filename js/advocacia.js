@@ -1,51 +1,66 @@
 $(document).ready(function(){
 	$('.navbar-brand').click(function () {
-
-	    $('#aInicio').addClass("opcao-ativa");
 	    $('#aEquipe').removeClass("opcao-ativa");
 	    $('#aQuemSomos').removeClass("opcao-ativa");
         $('#aContato').removeClass("opcao-ativa");
+        $('#aInstalacoes').removeClass("opcao-ativa");
+        $('#aDepoimentos').removeClass("opcao-ativa");
 	});
 	
     $('#aQuemSomos2').click(function () {
 
         $('#aQuemSomos').addClass("opcao-ativa");
         $('#aEquipe').removeClass("opcao-ativa");
-        $('#aInicio').removeClass("opcao-ativa");
         $('#aContato').removeClass("opcao-ativa");
-
+        $('#aInstalacoes').removeClass("opcao-ativa");
+        $('#aDepoimentos').removeClass("opcao-ativa");
     });
     $('#aQuemSomos').click(function () {
 
 	    $('#aQuemSomos').addClass("opcao-ativa");
 	    $('#aEquipe').removeClass("opcao-ativa");
-	    $('#aInicio').removeClass("opcao-ativa");
         $('#aContato').removeClass("opcao-ativa");
-
+        $('#aInstalacoes').removeClass("opcao-ativa");
+        $('#aDepoimentos').removeClass("opcao-ativa");
 	});
 	$('#aInicio').click(function () {
-
-	    $('#aInicio').addClass("opcao-ativa");
 	    $('#aEquipe').removeClass("opcao-ativa");
 	    $('#aQuemSomos').removeClass("opcao-ativa");
         $('#aContato').removeClass("opcao-ativa");
-
+        $('#aInstalacoes').removeClass("opcao-ativa");
+        $('#aDepoimentos').removeClass("opcao-ativa");
 	});
 	$('#aEquipe').click(function () {
 
 	    $('#aEquipe').addClass("opcao-ativa");
-	    $('#aInicio').removeClass("opcao-ativa");
 	    $('#aQuemSomos').removeClass("opcao-ativa");
         $('#aContato').removeClass("opcao-ativa");
-
+        $('#aInstalacoes').removeClass("opcao-ativa");
+        $('#aDepoimentos').removeClass("opcao-ativa");
 	});
     $('#aContato').click(function () {
 
         $('#aContato').addClass("opcao-ativa");
-        $('#aInicio').removeClass("opcao-ativa");
         $('#aQuemSomos').removeClass("opcao-ativa");
         $('#aEquipe').removeClass("opcao-ativa");
+        $('#aInstalacoes').removeClass("opcao-ativa");
+        $('#aDepoimentos').removeClass("opcao-ativa");
+    });
+    $('#aInstalacoes').click(function () {
 
+        $('#aInstalacoes').addClass("opcao-ativa");
+        $('#aQuemSomos').removeClass("opcao-ativa");
+        $('#aEquipe').removeClass("opcao-ativa");
+        $('#aContato').removeClass("opcao-ativa");
+        $('#aDepoimentos').removeClass("opcao-ativa");
+    });
+    $('#aDepoimentos').click(function () {
+
+        $('#aDepoimentos').addClass("opcao-ativa");
+        $('#aQuemSomos').removeClass("opcao-ativa");
+        $('#aEquipe').removeClass("opcao-ativa");
+        $('#aContato').removeClass("opcao-ativa");
+        $('#aInstalacoes').removeClass("opcao-ativa");
     });
 });
 

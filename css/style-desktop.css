@@ -63,6 +63,7 @@ body{
 	background-color: transparent;
 }
 
+
 .logo-size{
 	animation-duration: 1.5s;
 	animation-name: logosizelidein;
@@ -132,8 +133,6 @@ body{
 
 .text-white{
 	color: white;
-	font-size: 12pt;
-	text-transform: uppercase;
 }
 
 .opcao-ativa{
@@ -176,13 +175,21 @@ body{
 
 .background-quem-somos{
 	background-image: url("../imagens/fundo.jpg");
+    display: block;
+  max-width: 100%;
 }
 
 .background-equipe{
 	background-image: url("../imagens/fundo2.jpg");
-
+    display: block;
+    max-width: 100%;
 }
 
+.background-contato{
+    background-image: url("../imagens/fundo3.jpg");
+    display: block;
+    max-width: 100%;
+}
 
 .img-responsive:hover{
 	opacity: 0.8;
@@ -203,6 +210,13 @@ hr{
 	font-family: 'IM Fell French Canon SC', serif !important;
 }
 
+.text-size-contato{
+    font-size: 16pt; 
+}
+
+.img-manutencao{
+    margin: 0 auto;
+}
 
 /*Perfil - EQUIPE*/
 
@@ -298,4 +312,29 @@ hr{
 
 #aQuemSomos2{
     outline: none;
+}
+
+.background-footer{
+    background: #434343;
+    max-width:100%;
+}
+
+.text-black{
+    color:black !important;
+}
+
+.size-depoimentos{
+    padding-top: 60px;
+    height: 65%;
+}
+
+.img-depoimento{
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
 }
