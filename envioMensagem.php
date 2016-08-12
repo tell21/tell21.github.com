@@ -23,10 +23,13 @@ if( mail("natanael.natons13@gmail.com", $assunto, $texto, $cliente) ){
     <script type="text/javascript" src="js\bootstrap.min.js"></script>
     <script type="text/javascript" src="js\navbar.js"></script>
     <script type="text/javascript" src="js\advocacia.js"></script>
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css\font-awesome-animation.min.css">
     <link rel="stylesheet" href="css\bootstrap.css">
     <link rel="stylesheet" href="css\style-desktop.css">
+    <link href="js/magnific-popup/magnific-popup.css" rel="stylesheet">
   </head><body>
     <div class="cover" id="inicio">
       <div class="navbar-edit navbar-default navbar-fixed-top">
@@ -45,19 +48,19 @@ if( mail("natanael.natons13@gmail.com", $assunto, $texto, $cliente) ){
           <div class="collapse navbar-collapse" id="navbar-ex-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li id="aQuemSomos">
-                <a href="#quemSomos">Quem somos</a>
+                <a href="#quemSomos" class="page-scroll">Quem somos</a>
               </li>
               <li id="aEquipe">
-                <a href="#equipe">Equipe</a>
+                <a href="#equipe" class="page-scroll">Equipe</a>
               </li>
               <li id="aInstalacoes">
-                <a href="#instalacoes">Instalações</a>
+                <a href="#instalacoes" class="page-scroll">Instalações</a>
               </li>
               <li id="aDepoimentos">
-                <a href="#depoimentos">Depoimentos</a>
+                <a href="#depoimentos" class="page-scroll">Depoimentos</a>
               </li>
               <li id="aContato">
-                <a href="#contato">Contato</a>
+                <a href="#contato" class="page-scroll">Contato</a>
               </li>
             </ul>
           </div>
@@ -275,16 +278,128 @@ if( mail("natanael.natons13@gmail.com", $assunto, $texto, $cliente) ){
         </div>
       </div>
     </div>
-    <div class="section" id="instalacoes">
-      <div class="col-md-12">
-          <br><br><br><br>
-          <img src="imagens\manutenc.png" class="img-responsive img-manutencao"/>
+    <div class="section background-instalacoes" id="instalacoes">
+      <div class="container-fluid padding-top">
+        <div class="row no-gutter popup-gallery">
+            <div class="col-lg-4 col-sm-6">
+                <a href="imagens\instalacoes\1.jpg">
+                    <img src="imagens\instalacoes\1.jpg" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="imagens\instalacoes\2.jpg">
+                    <img src="imagens\instalacoes\2.jpg" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="imagens\instalacoes\3.jpg">
+                    <img src="imagens\instalacoes\3.jpg" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        <div class="row no-gutter popup-gallery">
+            <div class="col-lg-4 col-sm-6">
+                <a href="imagens\instalacoes\4.jpg">
+                    <img src="imagens\instalacoes\4.jpg" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="imagens\instalacoes\5.jpg">
+                    <img src="imagens\instalacoes\5.jpg" class="img-responsive">
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="imagens\instalacoes\6.jpg">
+                    <img src="imagens\instalacoes\6.jpg" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center text-white">Venha já nos fazer uma visita.</h3>
+            </div>
+        </div>
       </div>
     </div>
-    <div class="section" id="depoimentos">
-      <div class="col-md-12">
-          <br><br><br><br>
-          <img src="imagens\manutenc.png" class="img-responsive img-manutencao"/>
+    <div id="depoimentos" class="section background-depoimentos">
+      <div class="container size-depoimentos">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h4 class="text-center ">Veja o que dizem sobre nós.</h4>
+            <br>
+            <br>
+          </div>
+        </div>
+        <div id="myCarousel" data-interval="5000" class="carousel slide" data-ride="carousel">
+           <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+                <div class="col-md-6">
+                  <div class="depo">
+                      <img src="imagens\perfil.jpg">
+                  </div>
+                  <div class="depoimento">
+                      <h4>Aqui vem o depoimento do cliente, informando o que conseguiu etc...</h4>
+                      <h4>Nome do Cliente</h4>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="depo">
+                      <img src="imagens\perfil.jpg">
+                  </div>
+                  <div class="depoimento">
+                      <h4>Aqui vem o depoimento do cliente, informando o que conseguiu etc...</h4>
+                      <h4>Nome do Cliente</h4>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-6">
+                  <div class="depo">
+                      <img src="imagens\perfil.jpg">
+                  </div>
+                  <div class="depoimento">
+                      <h4>Aqui vem o depoimento do cliente, informando o que conseguiu etc...</h4>
+                      <h4>Nome do Cliente</h4>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="depo">
+                      <img src="imagens\perfil.jpg">
+                  </div>
+                  <div class="depoimento">
+                      <h4>Aqui vem o depoimento do cliente, informando o que conseguiu etc...</h4>
+                      <h4>Nome do Cliente</h4>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="col-md-6">
+                  <div class="depo">
+                      <img src="imagens\perfil.jpg">
+                  </div>
+                  <div class="depoimento">
+                      <h4>Aqui vem o depoimento do cliente, informando o que conseguiu etc...</h4>
+                      <h4>Nome do Cliente</h4>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="depo">
+                      <img src="imagens\perfil.jpg">
+                  </div>
+                  <div class="depoimento">
+                      <h4>Aqui vem o depoimento do cliente, informando o que conseguiu etc...</h4>
+                      <h4>Nome do Cliente</h4>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="section background-contato" id="contato">

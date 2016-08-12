@@ -191,6 +191,18 @@ body{
     max-width: 100%;
 }
 
+.background-depoimentos{
+    background-image: url("../imagens/fundo.jpg");
+    display: block;
+    max-width: 100%;
+}
+
+.background-instalacoes{
+    background: black;
+    display: block;
+    max-width: 100%;
+}
+
 .img-responsive:hover{
 	opacity: 0.8;
 }
@@ -315,7 +327,7 @@ hr{
 }
 
 .background-footer{
-    background: #434343;
+    background: black;
     max-width:100%;
 }
 
@@ -337,4 +349,44 @@ hr{
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.5);
+}
+
+.depo img{
+    width: 200px !important;
+    min-width: 10px !important;
+    height: 200px;
+    margin-left: 34%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgba(24, 25, 25, 0.5);
+}
+
+.depo img:hover{
+    background-color: black;
+}
+
+.depoimento{
+    width: 50%;
+    color: black;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.padding-top{
+    padding-top: 0 !important;
+}
+
+.background-indicators li{
+    background: black;
+}
+
+.carousel .item img {
+    max-width: 100%;
 }
